@@ -1,15 +1,15 @@
 :root {
-  --bg-dark: #041936;
-  --bg-dark-2: #0a2d5f;
+  --bg-dark: #013741;
+  --bg-dark-2: #0a4b5f;
   --bg-light: #d8e0ee;
   --text-light: #f5f8ff;
-  --text-dark: #082649;
+  --text-dark: #083149;
   --muted-light: rgba(245, 248, 255, 0.8);
   --muted-dark: rgba(8, 38, 73, 0.82);
   --line-dark: rgba(255, 255, 255, 0.1);
   --line-light: rgba(8, 38, 73, 0.09);
-  --accent: #2d68ff;
-  --accent-soft: #7db1ff;
+  --accent: #2dc0ff;
+  --accent-soft: #7dcbff;
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
   --container: 1200px;
   --header-h: 80px;
@@ -58,37 +58,6 @@ a {
   z-index: 2;
 }
 
-.site-grid {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.42;
-  background-image:
-    linear-gradient(to right,
-      transparent 0,
-      transparent calc(16.666% - 0.5px), rgba(255,255,255,0.08) calc(16.666% - 0.5px), rgba(255,255,255,0.08) calc(16.666% + 0.5px),
-      transparent calc(16.666% + 0.5px), transparent calc(33.333% - 0.5px), rgba(255,255,255,0.08) calc(33.333% - 0.5px), rgba(255,255,255,0.08) calc(33.333% + 0.5px),
-      transparent calc(33.333% + 0.5px), transparent calc(50% - 0.5px), rgba(255,255,255,0.08) calc(50% - 0.5px), rgba(255,255,255,0.08) calc(50% + 0.5px),
-      transparent calc(50% + 0.5px), transparent calc(66.666% - 0.5px), rgba(255,255,255,0.08) calc(66.666% - 0.5px), rgba(255,255,255,0.08) calc(66.666% + 0.5px),
-      transparent calc(66.666% + 0.5px), transparent calc(83.333% - 0.5px), rgba(255,255,255,0.08) calc(83.333% - 0.5px), rgba(255,255,255,0.08) calc(83.333% + 0.5px),
-      transparent calc(83.333% + 0.5px)
-    );
-}
-
-.section-light .site-grid,
-.navbar .site-grid {
-  background-image:
-    linear-gradient(to right,
-      transparent 0,
-      transparent calc(16.666% - 0.5px), rgba(8,38,73,0.08) calc(16.666% - 0.5px), rgba(8,38,73,0.08) calc(16.666% + 0.5px),
-      transparent calc(16.666% + 0.5px), transparent calc(33.333% - 0.5px), rgba(8,38,73,0.08) calc(33.333% - 0.5px), rgba(8,38,73,0.08) calc(33.333% + 0.5px),
-      transparent calc(33.333% + 0.5px), transparent calc(50% - 0.5px), rgba(8,38,73,0.08) calc(50% - 0.5px), rgba(8,38,73,0.08) calc(50% + 0.5px),
-      transparent calc(50% + 0.5px), transparent calc(66.666% - 0.5px), rgba(8,38,73,0.08) calc(66.666% - 0.5px), rgba(8,38,73,0.08) calc(66.666% + 0.5px),
-      transparent calc(66.666% + 0.5px), transparent calc(83.333% - 0.5px), rgba(8,38,73,0.08) calc(83.333% - 0.5px), rgba(8,38,73,0.08) calc(83.333% + 0.5px),
-      transparent calc(83.333% + 0.5px)
-    );
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -103,7 +72,7 @@ a {
 }
 
 .navbar.is-scrolled {
-  background: rgba(3, 21, 45, 0.88);
+  background: rgba(3, 39, 45, 0.88);
   border-bottom-color: var(--line-dark);
   backdrop-filter: blur(10px);
 }
@@ -153,7 +122,7 @@ a {
 }
 
 .section-dark {
-  background: linear-gradient(90deg, #041936 0%, #0a2b59 56%, #0c376f 100%);
+  background-color:#014c74;
   color: var(--text-light);
 }
 
@@ -248,7 +217,7 @@ a {
 
 .section-kicker-dark,
 .mini-kicker-dark {
-  color: #2459c9;
+  color:var(--accent-soft);
 }
 
 .mini-kicker,
@@ -270,6 +239,7 @@ a {
 .hero-panel {
   padding: 24px;
   border: 1px solid var(--line-dark);
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.03);
 }
 
@@ -311,7 +281,7 @@ a {
   width: 96px;
   height: 96px;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 10px;
   border: 1px solid var(--line-dark);
 }
 
@@ -417,6 +387,7 @@ a {
 .chip-list li {
   padding: 8px 12px;
   border: 1px solid var(--line-light);
+  border-radius: 8px;
   font-size: 0.92rem;
 }
 
@@ -435,7 +406,6 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 28px;
   padding: 28px 0;
-  border-top: 1px solid var(--line-dark);
   align-items: start;
 }
 
@@ -469,6 +439,7 @@ a {
     position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015));
     border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 8px;
     padding: 10px;
     width: 100%;
     cursor: zoom-in;
@@ -539,7 +510,7 @@ a {
 }
 
 .journey-step {
-  color: #2459c9;
+  color: var(--accent-soft);
   font-size: 0.9rem;
   margin-bottom: 12px;
 }
@@ -555,7 +526,7 @@ a {
 
 .contact-links {
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
 .contact-link {
@@ -577,8 +548,8 @@ a {
 }
 
 .footer {
-  padding: 20px 0 42px;
-  background: linear-gradient(90deg, #041936 0%, #0a2b59 56%, #0c376f 100%);
+  padding: 20px 0 20px;
+  background-color: var(--bg-dark);
   color: rgba(245,248,255,0.72);
   border-top: 1px solid var(--line-dark);
 }
