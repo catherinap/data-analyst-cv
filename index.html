@@ -129,19 +129,21 @@
               <h3>Analytical COT Intelligence Workspace</h3>
 
               <p>
-                An independently built analytical platform for Commitments of Traders research, cross-asset positioning, and macro regime
-                interpretation. The project transforms raw CFTC data into structured dashboards and decision-support interfaces, developed with AI
-                assistance across the full build.
+                A full-stack analytical platform for Commitments of Traders research, cross-asset positioning, and macro regime interpretation. A
+                scheduled Python worker pulls weekly CFTC data into PostgreSQL; a FastAPI backend serves cached analytics to a React dashboard spanning
+                correlation, seasonality, signals, historical data, and a custom macro-sentiment panel. Fully containerized with Docker, bilingual
+                (EN / UK), developed with AI assistance across the full build.
               </p>
 
               <ul class="chip-list dark-chips">
+                <li>React + Vite</li>
+                <li>FastAPI</li>
                 <li>Python</li>
-                <li>COT Analytics</li>
                 <li>PostgreSQL</li>
-                <li>OpenAI API usage</li>
-                <li>Dashboard Systems</li>
+                <li>Docker</li>
+                <li>COT Analytics</li>
+                <li>OpenAI API</li>
                 <li>AI-assisted development</li>
-                <li>In Progress</li>
               </ul>
             </div>
 
