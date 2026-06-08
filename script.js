@@ -126,3 +126,16 @@ document.addEventListener("keydown", (e) => {
         closeLightbox();
     }
 });
+
+const scrollProgress = document.getElementById("scroll-progress");
+
+function updateScrollProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    scrollProgress.style.width = progress + "%";
+}
+
+window.addEventListener("scroll", updateScrollProgress, { passive: true });
+window.addEventListener("resize", updateScrollProgress, { passive: true });
+updateScrollProgress();
