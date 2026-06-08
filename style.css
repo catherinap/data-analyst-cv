@@ -107,13 +107,31 @@ a {
 }
 
 .nav-links a {
+  position: relative;
   color: var(--muted-light);
   font-size: 0.98rem;
   transition: color 0.2s ease;
 }
 
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease;
+}
+
 .nav-links a:hover {
   color: var(--text-light);
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
 }
 
 .section {
@@ -174,6 +192,7 @@ a {
 }
 
 .btn {
+  position: relative;
   min-height: 43px;
   padding: 0 30px;
   border-radius: 999px;
@@ -182,11 +201,29 @@ a {
   justify-content: center;
   font-weight: 700;
   border: 1px solid transparent;
-  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
+  transition: transform 0.22s ease, background-color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.55s ease;
+  pointer-events: none;
 }
 
 .btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+
+.btn:hover::after {
+  left: 130%;
 }
 
 .btn-primary {
@@ -194,9 +231,19 @@ a {
   color: #fff;
 }
 
+.btn-primary:hover {
+  background: var(--accent-soft);
+  box-shadow: 0 10px 28px rgba(91, 130, 232, 0.45);
+}
+
 .btn-outline {
-  border-color: rgba(255,255,255,0.35);
+  border-color: rgba(255, 255, 255, 0.35);
   color: var(--text-light);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-soft);
+  box-shadow: 0 0 0 1px var(--accent-soft), 0 10px 28px rgba(91, 130, 232, 0.25);
 }
 
 .section-kicker,
@@ -389,6 +436,21 @@ a {
   border: 1px solid var(--line-light);
   border-radius: 8px;
   font-size: 0.92rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.chip-list li:hover {
+  border-color: var(--accent-soft);
+  box-shadow: 0 6px 16px rgba(91, 130, 232, 0.18);
+}
+
+.dark-chips li {
+  border-color: var(--line-dark);
+}
+
+.dark-chips li:hover {
+  border-color: var(--accent-soft);
+  background: rgba(91, 130, 232, 0.08);
 }
 
 .dark-chips li {
@@ -478,15 +540,16 @@ a {
 }
 
 .project-shot:hover {
-    transform: translateY(-3px);
-    border-color: rgba(125, 177, 255, 0.28);
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  transform: translateY(-4px);
+  border-color: var(--accent-soft);
+  box-shadow: 0 0 0 1px rgba(91, 130, 232, 0.35), 0 18px 34px rgba(91, 130, 232, 0.28);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
 }
 
 .project-shot:hover img {
-    transform: scale(1.03);
-    filter: saturate(1) brightness(1) contrast(1.05);
+  transform: scale(1.03);
+  filter: saturate(1) brightness(1) contrast(1.05);
+  border-color: rgba(91, 130, 232, 0.45);
 }
 
 .project-item.reverse .project-media-grid {
@@ -536,11 +599,13 @@ a {
   padding: 18px 0;
   border-top: 1px solid var(--line-dark);
   color: var(--text-light);
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition: color 0.2s ease, border-color 0.2s ease, padding-left 0.25s ease;
 }
 
 .contact-link:hover {
   color: var(--accent-soft);
+  padding-left: 10px;
+  border-color: var(--accent-soft);
 }
 
 .contact-link.is-copied {
