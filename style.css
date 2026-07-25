@@ -846,6 +846,63 @@ a {
   }
 }
 
+.lang-toggle {
+  min-width: 44px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent-soft);
+  color: var(--accent-soft);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+}
+
+/* Resume page: contact strip under the summary */
+.resume-contact-strip {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 18px 0 26px;
+  color: var(--muted-light);
+  font-size: 0.95rem;
+}
+
+.resume-contact-strip a {
+  color: var(--text-light);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.resume-contact-strip a:hover {
+  color: var(--accent-soft);
+  border-color: var(--accent-soft);
+}
+
+/* Flags unfilled personal info so it's easy to spot before publishing */
+.placeholder-note {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background: rgba(255, 196, 0, 0.16);
+  color: #ffd866;
+  border: 1px solid rgba(255, 196, 0, 0.35);
+}
+
 @media (max-width: 640px) {
   .container {
     width: min(var(--container), calc(100% - 28px));
@@ -881,5 +938,10 @@ a {
 
   #lightbox {
     padding: 18px;
+  }
+
+  .resume-contact-strip {
+    flex-direction: column;
+    gap: 8px;
   }
 }
