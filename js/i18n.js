@@ -153,7 +153,7 @@ const translations = {
   // Resume page
   "resume.kicker": { en: "Resume", da: "CV" },
   "resume.name.role": { en: "Aspiring Data Analyst — Python, SQL, Excel, Tableau", da: "Kommende Data Analyst — Python, SQL, Excel, Tableau" },
-  "resume.name.tagline": { en: "Data Analyst candidate, project-based path into analytics", da: "Data Analyst-kandidat, projektbaseret vej ind i analytics" },
+  "resume.name.tagline": { en: "Kateryna Panchenko - Aspiring Data Analyst", da: "Kateryna Panchenko - Kommende Data Analyst" },
   "resume.summary": {
     en: "Digital generalist moving into data analytics, with a background in frontend development, digital design, and self-built financial data tools. Currently completing a Data Analytics Specialist program (Python, SQL, Excel, Tableau) to formalize practical, hands-on experience gained by building COT/market data pipelines, Excel reporting systems, and dashboards. Adaptable, detail-oriented, and structured in how I work - currently based in Denmark and learning Danish from scratch.",
     da: "Digital generalist på vej ind i data analytics, med baggrund i frontend-udvikling, digitalt design og selvbyggede finansielle data-værktøjer. I gang med et Data Analytics Specialist-forløb (Python, SQL, Excel, Tableau) for at formalisere den praktiske erfaring, jeg har opnået ved at bygge COT/markeds-data-pipelines, Excel-rapporteringssystemer og dashboards. Tilpasningsdygtig, detaljeorienteret og struktureret i mit arbejde - bor i øjeblikket i Danmark og lærer dansk fra bunden.",

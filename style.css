@@ -136,6 +136,7 @@ a {
   display: flex;
   gap: 28px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-links a {
@@ -847,6 +848,10 @@ a {
 }
 
 .lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
   min-width: 44px;
   height: 32px;
   padding: 0 12px;
@@ -868,11 +873,53 @@ a {
 }
 
 /* Resume page: contact strip under the summary */
+.resume-hero {
+padding-top: calc(var(--header-h) + 50px);
+padding-bottom: 0;
+}
+
+.resume-hero-lead{
+  font-size: 1rem;
+  max-width: 55ch;
+  color: var(--muted-light);
+  margin-bottom: 8px;
+}
+
+.resume-photo-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.resume-portrait {
+  width: auto;
+  height: auto;
+  margin-top: 30px;
+  object-fit: contain;
+  max-width: 115%;
+  filter: drop-shadow(0 22px 45px rgba(0, 0, 0, 0.45));
+}
+
+.resume-name-panel {
+  text-align: center;
+  width: 100%;
+}
+
+.resume-name-panel h2 {
+  margin-bottom: 6px;
+}
+
+.resume-title h1 {
+  font-size: 2.8rem;
+  max-width: 100%;
+}
+
 .resume-contact-strip {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 10px;
   margin: 18px 0 26px;
   color: var(--muted-light);
   font-size: 0.95rem;
@@ -887,6 +934,14 @@ a {
 .resume-contact-strip a:hover {
   color: var(--accent-soft);
   border-color: var(--accent-soft);
+}
+
+.lang-chips {
+  margin-bottom: 30px;
+}
+
+.lang-chips li {
+  font-size: 1rem;
 }
 
 /* Flags unfilled personal info so it's easy to spot before publishing */
@@ -943,5 +998,140 @@ a {
   .resume-contact-strip {
     flex-direction: column;
     gap: 8px;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  .navbar,
+  #scroll-progress,
+  .lang-toggle,
+  .footer,
+  .site-grid,
+  .no-print,
+  #lightbox {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #131d2e !important;
+  }
+
+  .section,
+  .section-dark,
+  .section-light {
+    background: #ffffff !important;
+    color: #131d2e !important;
+    padding: 6px 0 !important;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  .hero {
+    padding-top: 0 !important;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .resume-photo-panel {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .resume-portrait {
+    width: 90px !important;
+    filter: none !important;
+  }
+
+  .resume-name-panel {
+    text-align: left;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .hero-panel {
+    background: none !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+
+  .mini-kicker,
+  .section-kicker,
+  .section-kicker-dark,
+  .mini-kicker-dark {
+    color: #0e38ac !important;
+  }
+
+  .section-title,
+  .section-title-dark,
+  h1,
+  h2,
+  h3 {
+    color: #131d2e !important;
+  }
+
+  .hero-lead,
+  .section-intro,
+  .section-intro-dark,
+  .content-block p,
+  .bullet-list li,
+  p {
+    color: #2a2a2a !important;
+  }
+
+  a {
+    color: #0e38ac !important;
+    text-decoration: none !important;
+  }
+
+  .chip-list li,
+  .dark-chips li {
+    border-color: #ccc !important;
+    background: none !important;
+    color: #131d2e !important;
+  }
+
+  .content-block,
+  .journey-card {
+    border-color: #ddd !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .two-column-blocks,
+  .project-list,
+  .journey-grid {
+    display: block !important;
+  }
+
+  .content-block,
+  .journey-card {
+    margin-bottom: 10px;
+  }
+
+  .fade-up,
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .placeholder-note {
+    background: none !important;
+    border: 1px solid #d99b00 !important;
+    color: #8a5c00 !important;
   }
 }

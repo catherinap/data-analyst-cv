@@ -31,39 +31,28 @@
       <section class="section hero section-dark resume-hero">
         <div class="site-grid"></div>
         <div class="container hero-layout">
-          <div class="hero-left fade-up">
+          <div class="hero-left resume-title fade-up">
             <div class="mini-kicker" data-i18n="resume.kicker">Resume</div>
-            <h1 data-i18n="resume.name.role">Aspiring Data Analyst — Python, SQL, Excel, Tableau</h1>
-            <p class="hero-lead" data-i18n="resume.summary">
-              Digital generalist moving into data analytics, with a background in frontend development, digital design, and self-built
-              financial data tools. Currently completing a Data Analytics Specialist program (Python, SQL, Excel, Tableau) to formalize
-              practical, hands-on experience gained by building COT/market data pipelines, Excel reporting systems, and dashboards. Adaptable,
-              detail-oriented, and structured in how I work - currently based in Denmark and learning Danish from scratch.
+            <h1 data-i18n="resume.name.tagline">Kateryna Panchenko - Aspiring Data Analyst</h1>
+            <p class="resume-hero-lead" data-i18n="resume.summary">
+              Digital generalist moving into data analytics, with a background in frontend development, digital design, and self-built financial data
+              tools. Currently completing a Data Analytics Specialist program (Python, SQL, Excel, Tableau) to formalize practical, hands-on
+              experience gained by building COT/market data pipelines, Excel reporting systems, and dashboards. Adaptable, detail-oriented, and
+              structured in how I work - currently based in Denmark and learning Danish from scratch.
             </p>
             <ul class="resume-contact-strip">
               <li>📧 <a href="mailto:katharina.panchenko@outlook.com">katharina.panchenko@outlook.com</a></li>
               <li>📞 <a href="tel:+45528200586">+45 528 00 586</a></li>
-              <li>📍 Silkeborg, Denmark <span class="placeholder-note">[PLACEHOLDER: confirm current city]</span></li>
+              <li>📍 Silkeborg, Denmark</li>
             </ul>
             <div class="hero-actions">
               <a class="btn btn-outline" href="https://www.linkedin.com/in/kp-cv" target="_blank" rel="noreferrer">LinkedIn</a>
               <a class="btn btn-outline" href="https://github.com/catherinap" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn btn-outline" href="https://catherinap.github.io/my_CV" target="_blank" rel="noreferrer" data-i18n="resume.generalCv">General CV</a>
             </div>
           </div>
 
-          <aside class="hero-right fade-up">
-            <article class="hero-panel">
-              <div class="hero-panel-top">
-                <div class="avatar">
-                  <img src="img/avatar.png" alt="Portrait of Kateryna Panchenko" />
-                </div>
-                <div>
-                  <h2>Kateryna Panchenko</h2>
-                  <p data-i18n="resume.name.tagline">Data Analyst candidate, project-based path into analytics</p>
-                </div>
-              </div>
-            </article>
+          <aside class="hero-right fade-up resume-photo-panel">
+            <img class="resume-portrait" src="img/avatar-Photoroom.png" alt="Portrait of Kateryna Panchenko" />
           </aside>
         </div>
       </section>
@@ -197,19 +186,31 @@
 
           <article class="content-block fade-up">
             <div class="mini-kicker mini-kicker-dark">November 2024 – March 2025 | Zabrze, Poland</div>
-            <h3><a href="https://www.freecodecamp.org/certification/panchenko_kate/responsive-web-design" target="_blank" rel="noreferrer">Responsive Web Design</a></h3>
+            <h3>
+              <a href="https://www.freecodecamp.org/certification/panchenko_kate/responsive-web-design" target="_blank" rel="noreferrer"
+                >Responsive Web Design</a
+              >
+            </h3>
             <p>freeCodeCamp</p>
           </article>
 
           <article class="content-block fade-up">
             <div class="mini-kicker mini-kicker-dark">October – November 2024 | Zabrze, Poland</div>
-            <h3><a href="https://genius.space/crt-verify/?verify=8de057b5-024d-48d0-895b-f8e99a1886ad" target="_blank" rel="noreferrer">AI Specialist</a></h3>
+            <h3>
+              <a href="https://genius.space/crt-verify/?verify=8de057b5-024d-48d0-895b-f8e99a1886ad" target="_blank" rel="noreferrer"
+                >AI Specialist</a
+              >
+            </h3>
             <p>Genius.Space</p>
           </article>
 
           <article class="content-block fade-up">
             <div class="mini-kicker mini-kicker-dark">November 2018 – April 2019 | Kharkiv, Ukraine</div>
-            <h3><a href="https://drive.google.com/file/d/1MfZUQa8J9klV7fsgFQNIrKaz-RvVZWYd/view?usp=sharing" target="_blank" rel="noreferrer">Frontend Developer</a></h3>
+            <h3>
+              <a href="https://drive.google.com/file/d/1MfZUQa8J9klV7fsgFQNIrKaz-RvVZWYd/view?usp=sharing" target="_blank" rel="noreferrer"
+                >Frontend Developer</a
+              >
+            </h3>
             <p>Beetroot Academy</p>
           </article>
 
@@ -231,7 +232,7 @@
         </div>
 
         <div class="container">
-          <ul class="chip-list dark-chips fade-up">
+          <ul class="chip-list dark-chips fade-up lang-chips">
             <li data-i18n="resume.lang.uk">Ukrainian — Native</li>
             <li data-i18n="resume.lang.ru">Russian — Fluent</li>
             <li data-i18n="resume.lang.en">English — B2</li>
@@ -265,7 +266,7 @@
       </div>
     </footer>
 
-    <script src="i18n.js"></script>
+    <script src="js/i18n.js"></script>
     <script>
       // Reuse the same scroll-progress + reveal logic from script.js
       const observer = new IntersectionObserver(
@@ -277,7 +278,7 @@
             }
           });
         },
-        { threshold: 0.14 }
+        { threshold: 0.14 },
       );
       document.querySelectorAll(".fade-up, .reveal").forEach((item) => observer.observe(item));
 
