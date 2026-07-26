@@ -880,7 +880,7 @@ padding-bottom: 0;
 
 .resume-hero-lead{
   font-size: 1rem;
-  max-width: 55ch;
+  /* max-width: 55ch; */
   color: var(--muted-light);
   margin-bottom: 8px;
 }
