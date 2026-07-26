@@ -873,6 +873,14 @@ a {
 }
 
 /* Resume page: contact strip under the summary */
+.section-dark .content-block {
+  border-top-color: var(--line-dark);
+}
+
+.section-dark .content-block p {
+  color: var(--muted-light);
+}
+
 .resume-hero {
 padding-top: calc(var(--header-h) + 50px);
 padding-bottom: 0;
@@ -934,6 +942,33 @@ padding-bottom: 0;
 .resume-contact-strip a:hover {
   color: var(--accent-soft);
   border-color: var(--accent-soft);
+}
+
+.page-resume .section-head-unique {
+  padding: 44px 0 16px;
+}
+
+.page-resume .two-column-blocks {
+  gap: 24px;
+  padding-bottom: 40px;
+}
+
+.page-resume .three-column-blocks {
+  gap: 32px;
+  padding-bottom: 40px;
+}
+
+.page-resume .content-block {
+  padding: 16px 0;
+}
+
+.page-resume .project-list {
+  gap: 12px;
+  padding-bottom: 40px;
+}
+
+.page-resume .journey-card {
+  padding: 14px 0;
 }
 
 .lang-chips {
@@ -1084,7 +1119,6 @@ padding-bottom: 0;
   }
 
   .section,
-  .section-dark,
   .section-light {
     background: #ffffff !important;
     color: #131d2e !important;
@@ -1215,5 +1249,40 @@ padding-bottom: 0;
   .lang-bar-label,
   .lang-bar-level {
     color: #131d2e !important;
+  }
+}
+
+/* ── Skills grid: Soft Skills sits under columns 1+2, Languages spans
+   both rows on the right — a proper aligned grid instead of a stacked mess */
+.skills-grid {
+  grid-template-areas:
+    "data tools lang"
+    "soft soft lang";
+}
+
+.skills-data {
+  grid-area: data;
+}
+
+.skills-tools {
+  grid-area: tools;
+}
+
+.skills-lang {
+  grid-area: lang;
+}
+
+.skills-soft {
+  grid-area: soft;
+}
+
+@media (max-width: 1100px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "data"
+      "tools"
+      "soft"
+      "lang";
   }
 }
