@@ -376,7 +376,7 @@ a {
 }
 
 .section-head {
-  padding: 64px 0 26px;
+  padding: 46px 0 26px;
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
   gap: 32px;
@@ -384,7 +384,7 @@ a {
 }
 
 .section-head-unique {
-    padding: 64px 0 26px;
+    padding: 46px 0 26px;
 }
 
 .section-head-unique h2 {
@@ -438,7 +438,7 @@ a {
 
 .two-column-blocks,
 .contact-layout {
-  padding-bottom: 64px;
+  padding-bottom: 46px;
   display: grid;
   grid-template-columns: 0.9fr 0.9fr;
   gap: 60px;
@@ -498,9 +498,8 @@ a {
 }
 
 .project-list {
-  padding-bottom: 64px;
+  padding-bottom: 46px;
   display: grid;
-  gap: 28px;
 }
 
 .project-item {
@@ -638,7 +637,7 @@ a {
 }
 
 .journey-grid {
-  padding-bottom: 64px;
+  padding-bottom: 46px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -661,7 +660,7 @@ a {
 
 .contact-layout {
   align-items: start;
-  padding-top: 64px;
+  padding-top: 46px;
 }
 
 .contact-links {
@@ -973,7 +972,7 @@ a {
 
 /* ── Resume "Skills, tools & languages" — 3-column layout ───────────────── */
 .three-column-blocks {
-  padding-bottom: 64px;
+  padding-bottom: 46px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
