@@ -1,3 +1,24 @@
+const navBurger = document.querySelector(".nav-burger");
+const navLinksEl = document.getElementById("nav-links");
+
+if (navBurger && navLinksEl) {
+    navBurger.addEventListener("click", () => {
+        const isOpen = navLinksEl.classList.toggle("is-open");
+        navBurger.classList.toggle("is-open", isOpen);
+        navBurger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        document.body.classList.toggle("nav-open", isOpen);
+    });
+
+    navLinksEl.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinksEl.classList.remove("is-open");
+            navBurger.classList.remove("is-open");
+            navBurger.setAttribute("aria-expanded", "false");
+            document.body.classList.remove("nav-open");
+        });
+    });
+}
+
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
