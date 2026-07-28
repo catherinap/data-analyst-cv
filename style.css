@@ -958,8 +958,9 @@ a {
 
 /* Flags unfilled personal info so it's easy to spot before publishing */
 .placeholder-note {
-  display: inline-block;
-  margin-left: 6px;
+  max-width: 75%;
+  display: block;
+  margin: 6px 0px;
   padding: 2px 8px;
   border-radius: 6px;
   font-size: 0.72rem;

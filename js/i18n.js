@@ -230,8 +230,12 @@ const translations = {
   "resume.edu.title": { en: "Education & training", da: "Uddannelse & kurser" },
   "resume.edu.item0.status": { en: "Planned — Jobcenter-funded upon employer confirmation", da: "Planlagt — finansieret af jobcentret ved bekræftelse fra arbejdsgiver" },
   "resume.edu.item0.text": {
-    en: "Python, statistics, SQL, Excel, Tableau. Jobcenter-funded in full if an employer confirms interest in hiring me as a data analyst afterward — no cost to the employer.",
-    da: "Python, statistik, SQL, Excel, Tableau. Finansieret fuldt ud af jobcentret, hvis en arbejdsgiver bekræfter interesse i at ansætte mig som data analyst bagefter — ingen omkostning for arbejdsgiveren.",
+    en: "Python, statistics, SQL, Excel, Tableau.",
+    da: "Python, statistik, SQL, Excel, Tableau.",
+  },
+  "resume.edu.item0.placeholder": {
+    en: "Jobcenter-funded in full if an employer confirms interest in hiring me as a data analyst afterward — no cost to the employer.",
+    da: "Finansieret fuldt ud af jobcentret, hvis en arbejdsgiver bekræfter interesse i at ansætte mig som data analyst bagefter — ingen omkostning for arbejdsgiveren.",
   },
   "resume.edu.item4.title": { en: "Environment Design", da: "Miljødesign" },
 };
