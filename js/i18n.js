@@ -188,7 +188,7 @@ const translations = {
   "resume.lang.ru.name": { en: "Russian", da: "Russisk" },
   "resume.lang.ru.level": { en: "Fluent", da: "Flydende" },
   "resume.lang.en.name": { en: "English", da: "Engelsk" },
-  "resume.lang.en.level": { en: "B2", da: "B2" },
+  "resume.lang.en.level": { en: "B2+", da: "B2+" },
   "resume.lang.pl.name": { en: "Polish", da: "Polsk" },
   "resume.lang.pl.level": { en: "B1", da: "B1" },
   "resume.lang.de.name": { en: "German", da: "Tysk" },
