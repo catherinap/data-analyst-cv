@@ -1130,6 +1130,10 @@ a {
     grid-template-columns: 72px 1fr;
   }
 
+  .hero-panel {
+    margin-top: 30px;
+  }
+
   .avatar {
     width: 72px;
     height: 72px;
