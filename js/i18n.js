@@ -103,7 +103,8 @@ const translations = {
   "proj3.chip2": { en: "Programming logic", da: "Programmeringslogik" },
   "proj3.chip3": { en: "Signal design", da: "Signaldesign" },
   "proj3.chip4": { en: "Independent project", da: "Selvstændigt projekt" },
-
+  "proj3.link": { en: "View on TradingView →", da: "Se på TradingView →" },
+  
   "proj4.mini": { en: "Structured process and reporting discipline", da: "Struktureret proces og rapporteringsdisciplin" },
   "proj4.text": {
     en: "A structured documentation system built in Notion for tracking process, decisions, and outcomes over time - covering preparation logs, structured notes, and outcome statistics. Evidence of the same discipline needed to maintain clean, reliable data records and repeatable reporting workflows.",
@@ -113,6 +114,17 @@ const translations = {
   "proj4.chip2": { en: "Process documentation", da: "Procesdokumentation" },
   "proj4.chip3": { en: "Structured tracking", da: "Struktureret sporing" },
   "proj4.chip4": { en: "Data organization", da: "Dataorganisering" },
+
+  "proj4.mini": { en: "Mini-project: SQL & BigQuery, from a 4-day Data Analytics intro", da: "Miniprojekt: SQL & BigQuery, fra et 4-dages data analytics-intro" },
+  "proj4.text": {
+    en: "A hands-on mini-project from a 4-day Data Analytics introduction (GoIT, led by a Senior Data Analyst at JustAnswer): connected to Google BigQuery's public Google Trends dataset, wrote SQL queries to filter and rank search terms, and built an interactive Looker Studio dashboard with region and date filters to surface the most popular searches in Denmark and specifically in the Central Denmark Region in 2026.",
+    da: "Et praktisk miniprojekt fra et 4-dages data analytics-introforløb (GoIT, ledet af en Senior Data Analyst hos JustAnswer): forbandt til Google BigQuerys offentlige Google Trends-datasæt, skrev SQL-forespørgsler til at filtrere og rangere søgeord, og byggede et interaktivt Looker Studio-dashboard med region- og datofiltre for at fremhæve de mest populære søgninger i Danmark og specifikt i Region Midtjylland i 2026.",
+  },
+  "proj4.chip1": { en: "SQL", da: "SQL" },
+  "proj4.chip2": { en: "Google BigQuery", da: "Google BigQuery" },
+  "proj4.chip3": { en: "Google Cloud", da: "Google Cloud" },
+  "proj4.chip4": { en: "Looker Studio", da: "Looker Studio" },
+  "proj4.link": { en: "View live dashboard →", da: "Se live dashboard →" },
 
   // Journey
   "journey.kicker": { en: "Journey", da: "Min vej" },
