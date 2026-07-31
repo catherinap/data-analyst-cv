@@ -462,6 +462,11 @@ a {
   max-width: 58ch;
 }
 
+.content-block a {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
 .chip-list {
   display: flex;
   flex-wrap: wrap;
