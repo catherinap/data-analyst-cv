@@ -54,6 +54,10 @@ body.modal-open {
   pointer-events: none;
 }
 
+.print-resume {
+  display: none;
+}
+
 /* ── Scrollbar ──────────────────────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 4px;
